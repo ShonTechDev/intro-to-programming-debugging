@@ -29,7 +29,7 @@ function checkGuess() {
 
   hideAllMessages();
 
-      if (guess == 0 targetNumber) {notZeroMessage.style.display = '';
+      if (guess === 0 ) {notZeroMessage.style.display = '';
     }
 
   if (guess === targetNumber) {
