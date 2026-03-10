@@ -30,10 +30,6 @@ function checkGuess() {
 
   hideAllMessages();
 
-      if (guess === 0 ) {notZeroMessage.style.display = '';
-      return;
-    }
-
   if (guess === targetNumber) {
     numberOfGuessesMessage.style.display = '';
     numberOfGuessesMessage.innerHTML = `You made ${attempts} guesses`;
