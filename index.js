@@ -11,6 +11,7 @@ const correctMessage = document.getElementById('correct');
 let targetNumber;
 let attempts = 0;
 const maxNumberOfAttempts = 5;
+const notZeroMessage = document.getElementById('not-zero');
 
 // Returns a random number from min (inclusive) to max (exclusive)
 // Usage:
@@ -30,6 +31,7 @@ function checkGuess() {
   hideAllMessages();
 
       if (guess === 0 ) {notZeroMessage.style.display = '';
+      return;
     }
 
   if (guess === targetNumber) {
